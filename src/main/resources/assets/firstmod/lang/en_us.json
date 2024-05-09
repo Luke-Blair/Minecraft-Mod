@@ -1,4 +1,6 @@
 {
   "item.firstmod.boof": "Boof",
-  "item.firstmod.raw_boof": "Raw Boof"
+  "item.firstmod.raw_boof": "Raw Boof",
+
+  "block.firstmod.block_of_boof": "Block of Boof"
 }
