@@ -13,6 +13,10 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
+    /**
+     * Adds items to the game
+     * Must create .json files (copy previous ones) and update them
+     */
     public static final Item BOOF = registerItem("boof",
             new Item(new Item.Settings()));
     public static final Item RAW_BOOF = registerItem("raw_boof",
@@ -21,6 +25,10 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(FirstMod.MOD_ID, name), item);
     }
 
+
+    /**
+     * Sets up for adding items to the creative inventory
+     */
     private static void itemGroupIngredients(FabricItemGroupEntries entries) {
         entries.add(BOOF);
         entries.add(RAW_BOOF);
@@ -29,6 +37,10 @@ public class ModItems {
         entries.add(ModBlocks.RAW_BLOCK_OF_BOOF);
     }
 
+    /**
+     * Helper method for creating items
+     * Adds the items to the creative inventory
+     */
     public static void registerModItems() {
         FirstMod.LOGGER.info("Registering Mod Items for "+ FirstMod.MOD_ID);
 
