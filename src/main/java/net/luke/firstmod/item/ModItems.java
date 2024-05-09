@@ -21,6 +21,13 @@ public class ModItems {
             new Item(new Item.Settings()));
     public static final Item RAW_BOOF = registerItem("raw_boof",
             new Item(new Item.Settings()));
+
+    /**
+     * Helper method for registering items
+     * @param name unique identifier for the item
+     * @param item item being added
+     * @return item
+     */
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(FirstMod.MOD_ID, name), item);
     }
