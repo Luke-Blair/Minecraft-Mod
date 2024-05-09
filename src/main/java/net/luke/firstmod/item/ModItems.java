@@ -26,6 +26,7 @@ public class ModItems {
         entries.add(RAW_BOOF);
 
         entries.add(ModBlocks.BLOCK_OF_BOOF);
+        entries.add(ModBlocks.RAW_BLOCK_OF_BOOF);
     }
 
     public static void registerModItems() {
